@@ -18,8 +18,11 @@ body
     position: relative
 //Nav 
 nav 
+    position: fixed
+    width: 100%
     height: 50px
-    background-color: #212121;
+    background-color: #212121
+    z-index: 2
     .menu
         padding: 18px 0 
         display: flex
@@ -36,6 +39,7 @@ nav
 // Logo
 .logo
     position: absolute
+    margin-top: 50px
     width: 100%
     height: 84px
     background-color: rgba(0, 0, 0, .6)
@@ -44,7 +48,7 @@ nav
         margin-top: 16px
     &-text
         margin-top: 6px
-        color: #ffffff;
+        color: #ffffff
         font-family: Roboto Thin
         font-size: 13px
         opacity: 0.5
@@ -126,9 +130,11 @@ nav
 // Began Work
 .beganWork
     min-height: 900px
+    padding-bottom: 65px
     &-advantage
-        max-width: 112px;
+        max-width: 112px
         margin-top: 71px
+        padding: 8px 15px
         background-color: #000000
         color: #ffffff
         font-family: Roboto Thin
@@ -139,13 +145,16 @@ nav
 .beganWork
     &-header
         margin-top: 38px
-        color: #222222;
-        font-size: 38px;
-        font-weight: $RobotoBold;
+        color: #222222
+        font-size: 38px
+        font-weight: $RobotoBold
         text-transform: uppercase
 .beganWork
     &-firstCouple
         margin-top: 40px
+.beganWork
+    &-couple
+        margin-top: 35px
 .beganWork
     &-wrapper
         display: flex
@@ -167,9 +176,147 @@ nav
         border-radius: 100%
 .beganWork
     &-descr
-        width: 341px
+        margin-left: 26px
+        max-width: 341px
+.beganWork
+    &-subheader
+        color: #1eacc7
+        font-size: 17px
+        font-weight: $RobotoRegular
+        line-height: 19px
+.beganWork
+    &-text
+        color: #202020
+        font-size: 15px
+        font-weight: $RobotoLight
+        line-height: 21px
+// Mobile
+.mobile
+    min-height: 864px
+    padding: 48px 0 80px 0
+    background: url(../img/mobileBG.jpg) center center/cover no-repeat
+    .row
+        margin-top: 32px
+    &-capabilities
+        width: 112px
+        margin: 0 auto
+        padding: 8px 15px
+        background-color: #000000
+        color: #ffffff
+        font-family: Roboto Thin
+        text-align: center
+        font-size: 11px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+    &-header
+        margin: 0 auto
+        margin-top: 38px
+        color: #222222
+        font-size: 38px
+        font-weight: $RobotoBold
+        text-transform: uppercase
+        text-align: center
+    &-subheader
+        margin: 0 auto
+        margin-top: 19px
+        color: #222222
+        font-size: 17px
+        font-weight: $RobotoRegular
+        text-align: center
+    &-item
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        margin-bottom: 19px
+        &-1
+            background: url(../icons/mobile/formalization.png) center center/cover no-repeat
+        &-2
+            background: url(../icons/mobile/feed2.png) center center/cover no-repeat
+        &-3
+            background: url(../icons/mobile/price.png) center center/cover no-repeat
+        &-4
+            background: url(../icons/mobile/payment.png) center center/cover no-repeat
+        &-5
+            background: url(../icons/mobile/feedBack.png) center center/cover no-repeat
+        &-6
+            background: url(../icons/mobile/separatePayment.png) center center/cover no-repeat
+    &-descr
+        padding-top: 91px
+        color: #ffffff
+        font-size: 24px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+        text-align: center
+    &-round
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        bottom: 35px
+        transform: translateX(-50%)
+        left: 50%
+        width: 26px
+        height: 26px
+        background-color: #000000
+        border-radius: 100%
+        margin: 0 auto
+        cursor: pointer
+// Car
+.car
+    min-height: 897px
+    background: url('../img/carBG.jpg') center center/cover no-repeat
+    padding-top: 57px
+    padding-bottom: 138px
+    &-advantage
+        width: 112px
+        margin: 0 auto
+        padding: 8px 15px
+        background-color: #ffffff
+        color: #070716
+        font-family: Roboto Thin
+        text-align: center
+        font-size: 11px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+    &-header
+        margin: 0 auto
+        margin-top: 32px
+        color: #ffffff
+        font-size: 38px
+        line-height: 24px
+        font-weight: $RobotoBold
+        text-transform: uppercase
+        text-align: center
+    &-subheader
+        margin: 0 auto
+        margin-top: 19px
+        color: #ffffff
+        font-size: 17px
+        font-weight: $RobotoRegular
+        text-align: center
+    &-img
+        display: block
+        margin: 0 auto
+        margin-top: 56px
+    &-text
+        margin-top: 4px
+        text-align: center
+        color: #222222
+        font-size: 17px
+        font-weight: $RobotoLight
+        line-height: 24px
+    
 
+  
 
+        
+
+        
+        
+        
+        
+        
 
 
 
