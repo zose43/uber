@@ -444,18 +444,78 @@ nav
         bottom: 49px
         color: #1fbad6
         &:hover
-            text-decoration: none
             color: #1fbad6
 // Footer
 .footer
-    min-height: 150px
+    position: relative
+    min-height: 148px
     &-divider
         margin: 0 auto
         margin-top: 14px
         width: 299px
         height: 4px
         background-color: #1fbad6
-
+    &-menu-header
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 32px
+        a
+            padding: 0 23px 0 23px
+            color: #070716
+            font-size: 15px
+            font-weight: $RobotoLight
+            text-transform: uppercase
+            line-height: 15px
+    &-menu-subheader
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 16px
+        a
+            padding: 0 10px 0 10px
+            color: #999999
+            font-size: 11px
+            font-weight: $RobotoLight
+            text-transform: uppercase
+    &-lang
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 31px
+        color: #1fbad6
+        font-size: 11px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+        &:hover
+            color: #1fbad6
+    &-socials
+        display: flex
+        position: absolute
+        top: 37px
+        left: 23px
+        &-item
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 32px
+            height: 32px
+            background-color: #070716
+            border-radius: 100%
+            margin-right: 9px
+            i
+                color: #ffffff
+    &-app
+        display: flex
+        position: absolute
+        top: 37px
+        right: 23px
+        &-item
+            margin-right: 7px
+            border-radius: 3px
+.divider
+    height: 8px
+    background-color: #070716
 
 
 
