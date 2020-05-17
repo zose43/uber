@@ -1,0 +1,508 @@
+.header
+    position: relative
+//Nav 
+nav 
+    position: fixed
+    width: 100%
+    height: 50px
+    background-color: #212121
+    z-index: 2
+    .menu
+        padding: 18px 70px 
+        display: flex
+        justify-content: space-around
+        margin: 0
+        &-item
+            list-style-type: none
+            line-height: 13px
+            border-right: 2px dotted black
+            padding-right: 29px
+            &:last-child
+                border-right: none
+                padding-right: 0
+        &-link
+            color: #ffffff
+            font-size: 15px
+            font-weight: $RobotoLight
+// Logo
+.logo
+    position: absolute
+    margin-top: 50px
+    width: 100%
+    height: 84px
+    background-color: rgba(0, 0, 0, .6)
+    z-index: 1
+    .logo-img
+        margin-top: 16px
+    &-text
+        margin-top: 6px
+        color: #ffffff
+        font-family: Roboto Thin
+        font-size: 13px
+        opacity: 0.5
+        font-weight: $RobotoThin
+    &-call            
+        margin-top: 23px
+        color: #ffffff
+        font-size: 12px
+        font-weight: $RobotoLight
+    &-phoneNumber
+        position: absolute
+        left: 0
+        margin-top: 8px
+        font-weight: $RobotoBold
+        line-height: 21px
+        text-transform: uppercase
+        &-link
+            color: #ffffff
+            font-size: 22px
+            &:hover
+                color: #ffffff
+    &-btn
+        margin-top: 19px
+        width: 172px
+        height: 46px
+        box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+        border: none
+        border-radius: 3px
+        background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+        color: #ffffff
+        font-size: 14px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+        cursor: pointer
+        outline: none
+        +btnHover
+//Promo
+.promo
+    min-height: 799px
+    background: url("../img/promoBG.jpg") center center/cover no-repeat
+    z-index: -1
+    &-header
+        margin-top: 201px
+        color: #ffffff
+        font-weight: $RobotoBold
+        text-transform: uppercase
+        font-size: 60px
+        line-height: 24px
+        text-align: center
+    .promo
+        &-subheader
+            margin-top: 22px
+            font-size: 36px
+            font-weight: $RobotoLight
+            line-height: 45px
+            text-align: center
+            color: #ffffff
+    .promo
+        &-descr
+            margin-top: 23px
+            color: #ffffff
+            font-size: 18px
+            font-weight: $RobotoRegular
+            line-height: 24px
+    .promo
+        &-btn
+            width: 259px
+            height: 63px
+            margin-top: 118px
+            box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+            border: none
+            border-radius: 3px
+            background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+            color: #ffffff
+            font-size: 18px
+            font-weight: $RobotoRegular
+            text-transform: uppercase
+            cursor: pointer
+            outline: none
+            +btnHover
+// Began Work
+.beganWork
+    min-height: 900px
+    padding-bottom: 65px
+    &-advantage
+        max-width: 112px
+        margin-top: 71px
+        padding: 8px 15px
+        background-color: #000000
+        color: #ffffff
+        font-family: Roboto Thin
+        font-size: 11px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+        text-align: center
+.beganWork
+    &-header
+        margin-top: 38px
+        color: #222222
+        font-size: 38px
+        font-weight: $RobotoBold
+        text-transform: uppercase
+.beganWork
+    &-firstCouple
+        margin-top: 40px
+.beganWork
+    &-couple
+        margin-top: 35px
+.beganWork
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+.beganWork
+    &-item
+        display: flex
+        justify-content: center
+        margin: 0 auto
+.beganWork
+    &-round
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 113px
+        height: 113px
+        background-color: #1eacc7
+        border-radius: 100%
+.beganWork
+    &-descr
+        margin-left: 26px
+        max-width: 341px
+.beganWork
+    &-subheader
+        color: #1eacc7
+        font-size: 17px
+        font-weight: $RobotoRegular
+        line-height: 19px
+.beganWork
+    &-text
+        color: #202020
+        font-size: 15px
+        font-weight: $RobotoLight
+        line-height: 21px
+// Mobile
+.mobile
+    min-height: 864px
+    padding: 48px 0 80px 0
+    background: url(../img/mobileBG.jpg) center center/cover no-repeat
+    .row
+        margin-top: 32px
+    &-capabilities
+        width: 112px
+        margin: 0 auto
+        padding: 8px 15px
+        background-color: #000000
+        color: #ffffff
+        font-family: Roboto Thin
+        text-align: center
+        font-size: 11px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+    &-header
+        margin: 0 auto
+        margin-top: 38px
+        color: #222222
+        font-size: 38px
+        font-weight: $RobotoBold
+        text-transform: uppercase
+        text-align: center
+    &-subheader
+        margin: 0 auto
+        margin-top: 19px
+        color: #222222
+        font-size: 17px
+        font-weight: $RobotoRegular
+        text-align: center
+    &-item
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        margin-bottom: 19px
+        &-1
+            background: url(../icons/mobile/formalization.png) center center/cover no-repeat
+        &-2
+            background: url(../icons/mobile/feed2.png) center center/cover no-repeat
+        &-3
+            background: url(../icons/mobile/price.png) center center/cover no-repeat
+        &-4
+            background: url(../icons/mobile/payment.png) center center/cover no-repeat
+        &-5
+            background: url(../icons/mobile/feedBack.png) center center/cover no-repeat
+        &-6
+            background: url(../icons/mobile/separatePayment.png) center center/cover no-repeat
+    &-descr
+        padding-top: 91px
+        color: #ffffff
+        font-size: 24px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+        text-align: center
+    &-round
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        bottom: 35px
+        transform: translateX(-50%)
+        left: 50%
+        width: 26px
+        height: 26px
+        background-color: #000000
+        border-radius: 100%
+        margin: 0 auto
+        cursor: pointer
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            height: 14px
+            width: 2px
+            background-color: #1eacc7
+            transform: translateX(-50%)
+            left: 50%
+            transition: 0.3s all
+        &::before
+            content: ''
+            display: block
+            width: 14px
+            height: 2px
+            background-color: #1eacc7
+            transition: 0.3s all
+        &:active
+            &::after,&::before
+                background-color: yellow
+
+// Car
+.car
+    min-height: 897px
+    background: url('../img/carBG.jpg') center center/cover no-repeat
+    padding-top: 57px
+    padding-bottom: 138px
+    &-advantage
+        width: 112px
+        margin: 0 auto
+        padding: 8px 15px
+        background-color: #ffffff
+        color: #070716
+        font-family: Roboto Thin
+        text-align: center
+        font-size: 11px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+    &-header
+        margin: 0 auto
+        margin-top: 32px
+        color: #ffffff
+        font-size: 38px
+        line-height: 24px
+        font-weight: $RobotoBold
+        text-transform: uppercase
+        text-align: center
+    &-subheader
+        margin: 0 auto
+        margin-top: 19px
+        color: #ffffff
+        font-size: 17px
+        font-weight: $RobotoRegular
+        text-align: center
+    &-img
+        display: block
+        margin: 0 auto
+        margin-top: 56px
+    &-text
+        margin-top: 4px
+        text-align: center
+        color: #222222
+        font-size: 17px
+        font-weight: $RobotoLight
+        line-height: 24px
+// Conditions
+.conditions
+    min-height: 919px
+    padding: 68px 0 84px 0
+    &-advantage
+        max-width: 112px
+        margin: 0 auto
+        padding: 8px 15px
+        background-color: #000000
+        color: #ffffff
+        font-family: Roboto Thin
+        font-size: 11px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+        text-align: center
+    &-header
+        margin: 0 auto
+        margin-top: 33px
+        color: #000000
+        font-size: 38px
+        line-height: 24px
+        font-weight: $RobotoBold
+        text-transform: uppercase
+        text-align: center
+    &-wrapper
+        margin: 33px 0
+    &-nmb
+        margin-bottom: 0px
+    &-subheader
+        color: #1ca8c3
+        font-size: 22px
+        font-weight: $RobotoRegular
+    &-subheaderRed
+        color: #ff5656
+        font-size: 22px
+        font-weight: $RobotoRegular
+    &-descr
+        margin-top: 22px
+        color: #1ca8c3
+        font-size: 17px
+        font-weight: $RobotoLight
+    &-list
+        margin-top: 22px
+        color: #222222
+        font-size: 17px
+        font-weight: $RobotoLight
+        list-style-type: none
+        line-height: 24px
+        &-item
+            position: relative
+            margin-bottom: 10px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                top: -2px
+                left: -32px
+                width: 21px
+                height: 20px
+                background: url('../icons/conditions/okAqua.png') center center/cover no-repeat
+        &-itemRed
+            position: relative
+            margin-bottom: 10px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                top: -2px
+                left: -32px
+                width: 21px
+                height: 20px
+                background: url('../icons/conditions/okRed.png') center center/cover no-repeat
+// World
+.world
+    position: relative
+    background: url('../img/worldBG.jpg') center center/cover no-repeat
+    padding: 49px 0
+    min-height: 717px
+    &-city
+        max-width: 76px
+        height: 24px
+        margin: 0 auto
+        padding: 4px 16px
+        background-color: #ffffff
+        color: #000000
+        font-family: Roboto Thin
+        font-size: 11px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+        text-align: center
+    &-header
+        margin: 0 auto
+        margin-top: 32px
+        color: #ffffff
+        font-size: 38px
+        font-weight: $RobotoBold
+        text-transform: uppercase
+        line-height: 24px
+        text-align: center
+    &-subheader
+        margin-top: 20px
+        color: #ffffff
+        font-size: 17px
+        font-weight: $RobotoRegular
+        text-align: center
+    &-link
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 49px
+        color: #1fbad6
+        &:hover
+            color: #1fbad6
+// Footer
+.footer
+    position: relative
+    min-height: 148px
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        padding: 32px 0 63px 0
+    &-wrapper > div
+        width: 33%   
+    &-divider
+        margin: 0 auto
+        margin-top: 14px
+        width: 299px
+        height: 4px
+        background-color: #1fbad6
+    &-menu-header
+        display: flex
+        justify-content: center
+        align-items: center
+        a
+            padding: 0 23px 0 23px
+            color: #070716
+            font-size: 15px
+            font-weight: $RobotoLight
+            text-transform: uppercase
+            line-height: 15px
+    &-menu-subheader
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 16px
+        a
+            padding: 0 10px 0 10px
+            color: #999999
+            font-size: 11px
+            font-weight: $RobotoLight
+            text-transform: uppercase
+    &-lang
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        margin-top: 19px
+        color: #1fbad6
+        font-size: 11px
+        font-weight: $RobotoRegular
+        text-transform: uppercase
+        &:hover
+            color: #1fbad6
+    &-socials
+        display: flex
+        justify-content: flex-start
+        padding-left: 23px
+        &-item
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 32px
+            height: 32px
+            background-color: #070716
+            border-radius: 100%
+            margin-right: 9px
+            i
+                color: #ffffff
+    &-app
+        display: flex
+        justify-content: flex-end
+        padding-right: 23px
+        &-item
+            margin-right: 7px
+            border-radius: 3px
+.divider
+    height: 8px
+    background-color: #070716
