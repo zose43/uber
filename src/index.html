@@ -12,8 +12,8 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
     <title>Uber</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Header -->
@@ -42,18 +42,25 @@
             </li>
           </ul>
         </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
       <!-- Logo -->
       <div class="logo">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 offset-md-1">
+            <div class="col-md-4 offset-md-1 col-6">
               <a href="#" class="logo-link"
                 ><img src="icons/logoUber.png" alt="Uber Logo" class="logo-img"
               /></a>
-              <div class="logo-text">Официальный партнер Uber в Москве</div>
+              <div class="logo-text less576">
+                Официальный партнер Uber в Москве
+              </div>
             </div>
-            <div class="col-md-3 offset-md-1 col-xl-2 offset-xl-2">
+            <div class="col-md-3 offset-md-1 col-xl-2 offset-xl-2 less576">
               <div class="logo-call">Звоните нам ежедневно</div>
               <div class="logo-phoneNumber">
                 <a href="tel:84957970988" class="logo-phoneNumber-link"
@@ -61,7 +68,12 @@
                 >
               </div>
             </div>
-            <div class="col-md-3 col-xl-2">
+            <div class="col-md-3 col-lg-2 col-6">
+              <div class="logo-phoneNumber mobileLogo">
+                <a href="tel:84957970988" class="logo-phoneNumber-link"
+                  >8 495 797 09 88</a
+                >
+              </div>
               <button class="logo-btn">заказать звонок</button>
             </div>
           </div>
@@ -72,44 +84,32 @@
     <section class="promo">
       <div class="container">
         <div class="row">
-          <div class="col-10 offset-md-1">
-            <h1 class="promo-header">КОМПАНИЯ UBER PARTNERS!</h1>
-            <h2 class="promo-subheader">
-              ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
-            </h2>
+          <h1 class="promo-header">КОМПАНИЯ UBER PARTNERS!</h1>
+          <h2 class="promo-subheader">
+            ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
+          </h2>
+          <div class="promo-descr">
+            Компания UBER динамически развивающаяся. Компания на рынке занимает
+            лидирующее место среди таксомоторных компаний, Компания абсолютно
+            прозрачная вы можете контролировать все процессы у себя в личном
+            кабинете. Бонуcная система.Помимо выполненной работы по заказам,
+            компания начисляет бонусы за пиковое время.
+            <br /><br />
+            Мы одни из партнеров и зарекомендовали себя как одна из лучших
+            команд в городе Москве. Водители у нас зарабатывают от 80000- 120000
+            в месяц.
           </div>
-          <div class="col-md-10 offset-md-1">
-            <div class="promo-descr">
-              Компания UBER динамически развивающаяся. Компания на рынке
-              занимает лидирующее место среди таксомоторных компаний, Компания
-              абсолютно прозрачная вы можете контролировать все процессы у себя
-              в личном кабинете. Бонуcная система.Помимо выполненной работы по
-              заказам, компания начисляет бонусы за пиковое время.
-              <br /><br />
-              Мы одни из партнеров и зарекомендовали себя как одна из лучших
-              команд в городе Москве. Водители у нас зарабатывают от 80000-
-              120000 в месяц.
-            </div>
-          </div>
-          <div class="col-md-4 offset-md-4">
-            <button class="promo-btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
-          </div>
+          <button class="promo-btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
         </div>
       </div>
     </section>
     <!-- Began Work -->
     <section class="beganWork">
       <div class="container">
+        <div class="beganWork-advantage">преимущества</div>
+        <h2 class="beganWork-header">8 причин начать работать с нами</h2>
         <div class="row">
-          <div class="col-md-2 offset-md-5">
-            <div class="beganWork-advantage">преимущества</div>
-          </div>
-          <div class="col-md-8 offset-md-2">
-            <h2 class="beganWork-header">8 причин начать работать с нами</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 beganWork-firstCouple">
+          <div class="col-md-6 beganWork-first">
             <div class="beganWork-wrapper">
               <div class="beganWork-item">
                 <div class="beganWork-round">
@@ -131,6 +131,10 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-md-6 beganWork-mt">
+            <div class="beganWork-wrapper">
               <div class="beganWork-item">
                 <div class="beganWork-round">
                   <img
@@ -150,9 +154,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 beganWork-couple">
+          <div class="col-md-6 beganWork-mt">
             <div class="beganWork-wrapper">
               <div class="beganWork-item">
                 <div class="beganWork-round">
@@ -174,6 +176,10 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-md-6 beganWork-mt">
+            <div class="beganWork-wrapper">
               <div class="beganWork-item">
                 <div class="beganWork-round">
                   <img
@@ -196,9 +202,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 beganWork-couple">
+          <div class="col-md-6 beganWork-mt">
             <div class="beganWork-wrapper">
               <div class="beganWork-item">
                 <div class="beganWork-round">
@@ -220,6 +224,10 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-md-6 beganWork-mt">
+            <div class="beganWork-wrapper">
               <div class="beganWork-item">
                 <div class="beganWork-round">
                   <img
@@ -242,9 +250,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 beganWork-couple">
+          <div class="col-md-6 beganWork-mt">
             <div class="beganWork-wrapper">
               <div class="beganWork-item">
                 <div class="beganWork-round">
@@ -265,6 +271,10 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-md-6 beganWork-mt">
+            <div class="beganWork-wrapper">
               <div class="beganWork-item">
                 <div class="beganWork-round">
                   <img
@@ -539,5 +549,6 @@
     </footer>
     <!-- Divider-Black -->
     <div class="divider"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
     .logo
         &-call
             font-size: 11px
+            text-align: center
     .beganWork
         &-header
             font-size: 33px
@@ -19,13 +20,15 @@
             width: 300px
 @media (max-width: 991px)
     .promo
-
+        &-btn
+            width: 240px
+            height: 60px
         &-header
             font-size: 35px
-    .promo
-        .promo-descr
+    
+        &-descr
             font-size: 16px
-        .promo-subheader
+        &-subheader
             font-size: 20px
     nav
         .menu
@@ -37,16 +40,134 @@
         &-btn
             width: 150px
             height: 40px
+            margin-top: 21px
         &-call
             margin-top: 20px
+            text-align: center
         &-img
-            width: 200px
+            width: 100%
         &-text
             font-size: 12px
     .logo-phoneNumber
         &-link
             font-size: 18px
-            text-align: left
+    .beganWork
+        &-advantage
+            padding: 8px 9px
+        &-header
+            margin-top: 34px
+            font-size: 30px
+        &-item
+            flex-direction: column
+            align-items: center
+        &-subheader
+            margin-top: 14px
+    .mobile
+        &-item
+            width: 212px
+        &-header
+            margin-top: 32px
+            font-size: 30px
+        &-subheader
+            margin-top: 10px
+            font-size: 16px
+        &-descr
+            font-size: 20px
+    .car
+        &-header
+            margin-top: 28px
+            font-size: 34px
+        &-subheader
+            margin-top: 15px
+            font-size: 16px
+        &-img
+            width: 80%
+    .conditions
+        &-header
+            margin-top: 28px
+            font-size: 34px
+    .world
+        &-header
+            margin: 28px
+            font-size: 34px
+        &-subheader
+            font-size: 16px
+@media (max-width: 767px)
+    nav
+        .menu
+            flex-direction: column
+            align-items: center
+            position: fixed
+            left: -100%
+            top: 0
+            width: 50%
+            height: 100vh
+            padding: 20px 15px
+            background-color: rgba(0,0,0,.8)
+            transition: 0.6s all
+            &-active
+                left: 0
+            &-item
+                border-right: none
+                padding-right: 0
+            &-link
+                font-size: 22px
+    .hamburger
+        display: block
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 10px
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #ffffff
+            margin-top: 3px
+        &-active
+            span
+                margin-top: -2px
+                transition: 0.5s all
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .less576
+        display: none
+    .mobileLogo
+        display: block
+    .logo
+        &-btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 9px auto
+            font-size: 12px
+        .logo-phoneNumber
+            text-align: center
+            line-height: 12px
+            &-link
+                font-size: 15px
+    .promo
+        &-descr
+            padding: 0 7px
+            margin-top: 13px
+        &-subheader
+            margin-top: 10px
+        &-btn
+            width: 220px
+            height: 50px
+        
+
+                
+        
+            
+
+
         
      
    
