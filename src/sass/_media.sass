@@ -52,6 +52,8 @@
         &-link
             font-size: 18px
     .beganWork
+        &-descr
+            margin-left: 0
         &-advantage
             padding: 8px 9px
         &-header
@@ -63,8 +65,10 @@
         &-subheader
             margin-top: 14px
     .mobile
+        padding-bottom: 50px
         &-item
-            width: 212px
+            width: 215px
+            height: 250px
         &-header
             margin-top: 32px
             font-size: 30px
@@ -72,16 +76,23 @@
             margin-top: 10px
             font-size: 16px
         &-descr
-            font-size: 20px
+            font-size: 17px
+            padding-right: 7px
+            padding-left: 7px
     .car
+        padding: 37px 0 100px 0
         &-header
             margin-top: 28px
             font-size: 34px
         &-subheader
             margin-top: 15px
-            font-size: 16px
+            font-size: 18px
         &-img
             width: 80%
+        &-text
+            margin-top: 30px
+            font-size: 20px
+            line-height: 28px
     .conditions
         &-header
             margin-top: 28px
@@ -112,6 +123,25 @@
                 padding-right: 0
             &-link
                 font-size: 22px
+    .mobile
+        &-header
+            margin-top: 18px
+            font-size: 21px
+            line-height: 15px
+        &-descr
+            padding: 130px 46px 0 48px
+            font-size: 24px
+            line-height: 32px
+        &-subheader
+            margin-top: 15px
+            margin-bottom: 34px
+            font-size: 17px
+            line-height: 24px
+            padding: 0 4px
+            color: #222222
+        &-item
+            width: 430px
+            height: 390px
     .hamburger
         display: block
         position: absolute
@@ -161,9 +191,51 @@
         &-btn
             width: 220px
             height: 50px
+    .car
+        padding: 34px 0 85px 0
+        &-header
+            margin-top: 27px
+            font-size: 28px
+        &-subheader
+            margin-top: 14px
+            font-size: 16px
+        &-img
+            width: 85%
+        &-text
+            margin-top: 100px
+            font-size: 18px
+            line-height: 27px
 @media (max-width: 575px)
+    .car
+        min-height: 390px
+        padding-top: 32px
+        background: url("../img/carBG320.jpg") center center/cover no-repeat
+        padding-bottom: 0
+        &-img
+            display: block
+            margin: 0 auto
+            padding-right: 16px
+            width: 300px
+            height: 190px
+            margin-top: 15px
+            margin-bottom: 10px
+        &-header
+            display: none
+            margin-top: 25px
+            font-size: 23px
+        &-subheader
+            display: none
+            margin-top: 13px
+            font-size: 14px
+            line-height: 15px
+        &-text
+            margin-top: 23px
+            color: #ffffff
+            font-size: 17px
+            line-height: 24px
     .logo
         height: 60px
+        margin-top: 30px
         &-img
             margin-top: 23px
         &-btn
@@ -179,13 +251,163 @@
     .promo
         min-height: 400px
         &-header
-            
+            font-size: 33px
+            line-height: 35px
+            margin-top: 143px
+            padding: 0 24px
         &-btn
-            margin-top: 
+            margin-top: 40px
+            width: 210px
+            height: 40px
         &-subheader
-            margin-top: 
+            margin-top: 25px
+            font-size: 20px
+            line-height: 27px
+            padding: 0 10px
         &-descr
             display: none
+    nav
+        height: 30px
+        .menu
+            &-active
+                width: 85%
+    .beganWork
+        padding-bottom: 36px
+        &-subheader
+            margin-bottom: 1px
+            font-size: 16px
+        &-round
+            width: 100px
+            height: 100px
+        &-advantage
+            margin-top: 22px
+            width: 112px
+            height: 24px
+            font-size: 11px
+            padding: 4px 9px
+        &-header
+            margin-top: 14px
+            font-size: 15px
+        &-first
+            margin-top: 25px
+        &-descr
+            margin-top: 24px
+    .mobile
+        padding: 22px 0
+        &-item
+            width: 290px
+            height: 254px
+        &-descr
+            padding: 81px 46px 0 48px
+            font-size: 17px
+            line-height: 24px
+        &-capabilities
+            width: 112px
+            height: 24px
+            font-size: 11px
+            padding: 4px 9px
+        &-header
+            margin-top: 15px
+            font-size: 16px
+            line-height: 15px
+        &-subheader
+            margin-top: 7px
+            margin-bottom: 27px
+            font-size: 14px
+            line-height: 24px
+            color: #222222
+    .conditions
+        padding: 25px 0
+        &-header
+            margin-top: 15px
+            font-size: 16px
+        &-wrapper
+            margin-top: 17px
+            margin-bottom: 29px
+        &-subheader
+            font-size: 16px
+        &-descr
+            font-size: 13px
+            line-height: 16px
+            margin-top: -4px
+        &-list
+            width: 90%
+            margin-top: 7px
+            margin-bottom: 0
+            &-item
+                font-size: 14px
+                line-height: 22px
+                margin-bottom: 6px
+                line-height: 17px
+            &-itemRed
+                font-size: 14px
+                line-height: 22px
+                margin-bottom: 6px
+                line-height: 19px
+    .world
+        padding: 0
+        padding-top: 25px
+        min-height: 321px
+        &-city
+        &-header
+            margin-top: 15px
+            margin-bottom: 10px  
+            font-size: 16px
+        &-subheader
+            font-size: 14px
+            line-height: 5px
+        &-link
+            bottom: 30px
+            font-size: 14px
+    .divider
+        display: none
+    .footer
+        min-height: 245px
+        &-wrapper
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            padding: 0
+        &-wrapper > div
+            &:nth-child(1)
+                order: 3
+            &:nth-child(3)
+                order: 4
+                
+        &-lang
+            bottom: 116px
+            font-size: 11px
+        &-socials
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 33px
+            &-item
+                padding-right: 4px
+        &-menu-header
+            margin: 0 auto
+            margin-top: 10px
+            a
+                font-size: 12px
+                padding: 0 9px
+        
+        &-menu-subheader
+            
+            margin: 0 auto
+            margin-top: 13px
+            a
+                font-size: 10px
+                width: 70%
+        &-app
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: -22px
+            margin-top: 20px
+        &-divider
+            width: 253px
+
+
         
 
                 
